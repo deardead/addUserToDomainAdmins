@@ -6,10 +6,10 @@ date: 2025-06-13
 description: |
   Detecta cuando un usuario es agregado al grupo "Domain Admins" en Active Directory, lo que puede indicar una posible escalada de privilegios o actividad sospechosa.
 tags:
-  - attack.persistence
-  - attack.privilege_escalation
-  - attack.t1098
-  - attack.t1078
+  - attack.persistence #La adición de usuarios a grupos privilegiados puede ser utilizada por atacantes para mantener acceso persistente en el sistema
+  - attack.privilege_escalation #Un usuario agregado a Domain Admins obtiene privilegios elevados, lo que puede indicar una escalada de privilegios
+  - attack.t1098 #Representa la manipulación de cuentas y grupos en Active Directory para obtener acceso privilegiado
+  - attack.t1078 #Se refiere al uso de cuentas legítimas para obtener acceso administrativo
 
 status: Experimental
 logsource:
